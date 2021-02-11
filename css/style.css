@@ -1,0 +1,403 @@
+/*Navigation*/
+.navigation{
+    position: fixed;
+    height: 133px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #D7ECD9;
+    z-index: 2;
+}
+    
+.topnav {
+    margin-left: 122px;
+    margin-right: 122px;
+    font-family: 'Lato';
+}
+    
+.topnav a {
+    float: right;
+    color: #303030;
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 24px;
+    text-decoration: none;
+}
+      
+.topnav a:hover {
+    color: #303030;
+    font-weight: 700;
+}
+      
+.topnav a.active {
+    color: #303030;
+    font-weight: 700;
+}
+  
+.absolute {
+    position: absolute;
+    margin-left: 122px;
+    top: 50px;
+}
+  
+.avatar{
+    background-image: url("../images/avatar-red-bg.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    width: 148.14px;
+    height: 155px;
+    margin-top: 4px;
+}
+.avatar:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Hero*/
+body{
+    position: relative;
+    color: #303030;
+    text-align: center;
+    padding-top: 133px;
+    font-size: 24px;
+    width: 100%;
+}
+  
+.hero{
+    position: relative;
+    width: auto;
+    height: 435px;
+    border-radius: 5px;
+    background-color: #DFF6FA;
+    margin-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas:
+    "htrLogo htrPrototype htrPrototype"
+    "htrLogo htrPrototype htrPrototype"
+  }
+  
+
+#htrLogo{
+    grid-area: htrLogo;
+    align-self: center;
+    background-image: url("../images/Happy-Tails-Logo.png");
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: contain;
+    height: 100%;
+    transform: scale(.7);
+}
+  
+#htrPrototype{
+    grid-area: htrPrototype;
+    align-self: center;
+    margin-left: -6%;
+    background-image: url("../images/Happy-Tails-Desk-phone.png");
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: contain;
+    height: 100%;
+    transform: scale(.9);
+}
+
+/*Case Study*/
+.caseStudy{
+    margin-left: 122px;
+    margin-right: 122px;
+    padding-bottom: 30px;
+}
+
+.headerSection{
+    background-color: #BBF1F1;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card-img-overlay{
+    position: relative;
+}
+
+.card{
+    border-style: none;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borderRadius{
+    border-radius: 50px;
+}
+
+.button{
+    background-color: #FFB6B9; 
+    color: #303030;
+    width: 224px;
+    height: 50px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+  
+.button:hover{
+    background-color: #CBD2F5;
+    color: #303030;
+}
+  
+/*text and font*/
+h1{
+    font-family: 'Judson';
+    font-size: 72px;
+    color: #303030;
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.headerAlign{
+    padding-left: 122px;
+    padding-top: 30px;
+}
+  
+.center{
+    text-align: center;
+}
+
+h2{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 48px;
+    color: #303030;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.subheader{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 48px;
+    color: #303030;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 30px;
+}
+  
+.subheader2{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 48px;
+    text-align: left;
+    color: #303030;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 500;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+  
+.subheader2:before, .subheader2:after {
+    content: "";
+    flex: 1 1;
+    margin: auto;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #CBD2F5;
+}
+  
+.subheader2:before {
+    margin-right: 50px
+}
+  
+.subheader2:after {
+    margin-left: 50px
+}
+      
+p{
+    font-family: 'Lato';
+    font-size: 24px;
+    color: #303030;
+    text-align: left;
+}
+
+.paragraph{
+    font-family: 'Lato';
+    font-size: 24px;
+    color: #303030;
+    text-align: left;
+}
+      
+.paragraphGrey{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 24px;
+    text-align: left;
+    color: #303030;
+    opacity: 75%;
+}
+      
+.miniText{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 18px;
+    text-align: left;
+    color: #303030;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul{
+    font-family: 'Lato';
+    font-size: 24px;
+    color: #303030;
+    text-align: left;
+    margin-left: 50px;
+    line-height: 50px;
+}
+      
+.bold{
+    font-weight: 700;
+}
+  
+.spaced{
+    line-height: 50px;
+}
+
+.paddingBottom{
+    padding-bottom: 30px;
+}
+  
+/*effects*/
+.dropshadow{
+    filter: drop-shadow(0px 4px 4px #BFBFBF);
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #303030;
+}
+  
+/*footer*/
+.footer{
+    background-color: #CBD2F5;
+    font-family: 'Lato';
+    height: 135px;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+        
+.icons{
+    padding-right: 30px;
+    padding-left:30px;
+}
+
+.padding{
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+        
+        
+.copyright{
+    position: absolute;
+    display: inline-block;
+    padding-top: 100px;
+}
+        
+/*Media Breaks*/
+@media only screen and (max-width: 600px){
+    .topnav{
+      margin-top: -30px;
+      margin-right: 10%;
+      margin-left: 0px;
+      justify-content: center;
+    }
+    
+    .absolute{
+      margin-left: 35%;
+      margin-right: auto;
+      justify-content: center;
+      width: auto;
+    }
+  
+    .body{
+      margin-left: -10%;
+      margin-right: -10%;
+      align-items: center;
+    }
+  
+    .footer{
+      width: 100%;
+      padding-left: 11.8%;
+    }
+  
+    .hero{
+      position: static;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-areas:
+      "htrLogo htrLogo htrLogo"
+      "htrPrototype htrPrototype htrPrototype"
+    }
+
+    #htrLogo{
+      align-self: center;
+      margin-top: 50px;
+      height: 100%;
+      transform: scale(.9);
+      margin-left: 20%
+    }
+    
+    #htrPrototype{
+      align-self: center;
+      margin-top: 50px;
+      height: 100%;
+      transform: scale(.9);
+      margin-left: 15%
+    }
+
+    .caseStudy{
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-bottom: 30px;
+    }
+}
